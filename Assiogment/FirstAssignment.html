@@ -5,21 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Assignment </title>
 </head>
 
-<body style="background-color:rgb(193, 238, 151);">
-    <h1>Name of your family</h1>
-    <img src="IMAGE/photo.jpg" alt="" width="350px">
-    <ol>
+<body>
+    <div class="container">
+        <div class="main-header">
+            <h1>Name of your family</h1>
+        </div>
+        <div class="image">
+            <img src="IMAGE/photo.jpg" alt="" width="350px">
+        </div>
+        <div class="main">
+            <ol>
 
-        <li><a href="father.html">Mbonu Christopher</a></li>
-        <li><a href="mother.html">Mbonu Eucharia</a></li>
-        <li><a href="firstborn.html">Mbonu Emeka</a></li>
-        <li><a href="secondborn.html">Mbonu Chidindu</a></li>
-        <li><a href="lastborn.html">Mbonu Chidiogo</a></li>
+                <li><a href="father.html">Mbonu Christopher</a></li>
+                <li><a href="mother.html">Mbonu Eucharia</a></li>
+                <li><a href="firstborn.html">Mbonu Emeka</a></li>
+                <li><a href="secondborn.html">Mbonu Chidindu</a></li>
+                <li><a href="lastborn.html">Mbonu Chidiogo</a></li>
 
-    </ol>
+            </ol>
+        </div>
+
+        <form action="" method="GET">
+            <div>
+                <label for="firstName">firstName</label>
+                <input type="text" name="firstName" placeholder="Enter your Fname" id="firstName">
+            </div>
+            <div><br>
+                <label for="LastName">lastName</label>
+                <input type="text" name="lastName" placeholder="Enter your lname" id="lastName">
+            </div><br>
+            <div>
+                <label for="DOB">DOB</label>
+                <input type="date" name="date" id="DOB">
+            </div><br>
+            <div>
+                <label for="male">male</label>
+                <input type="radio" name="gender"> Male<br>
+                <label for="female">female</label>
+                <input type="radio" name="gender"> Female<br>
+                <label for="other">other</label>
+                <input type="radio" name="gender"> Other
+            </div>
+        </form>
+    </div>
+    <div class="clr"></div>
 </body>
 
 </html>
